@@ -1,0 +1,143 @@
+
+.page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*flex-direction: column;
+    flex-wrap: wrap;*/
+    margin:auto;
+    background-image: url(../images/lines\ 2.svg);
+    background-repeat: no-repeat;
+    background-position: top left;
+}
+
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1440px;
+    max-height: 652px;
+    width: 100%;
+    height: 100%;
+    gap: 101px;
+    flex-wrap: wrap;
+}
+
+.logo-link__image {
+    margin-left: 5px;
+    max-width: 126px;
+    width: 100%;
+}
+
+.logo-link {
+    display: block;
+    max-width: 126px;
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.content_box__desc {
+    max-width: 505px;
+    width: 100%;
+}
+
+.content_box {
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+    max-width: 505px;
+    max-height: 652px;
+    height: 100%; 
+    width: 100%;
+    align-self: flex-start;
+    
+}
+.cover {
+    background-image: url(../images/jrg_live_background\ 2.svg);
+    background-size: cover;
+    /*background-position: center;*/
+    max-width: 714px;
+    max-height: 611px;
+    width: 100%;
+    height: 100%;
+    /*object-fit: contain;*/
+    object-fit: cover;
+    /*height: 100%;
+    flex-shrink: 1;
+    flex-wrap: wrap;*/
+    align-self: flex-end;
+}
+
+.content_box__desc {
+    font-family: inherit;
+    margin-bottom: 5px;
+}
+
+.desc__title {
+    color: #000;
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 21px;
+}
+
+.desc__text {
+    color:#000;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.desc__button_box {
+    /*display: grid;
+    grid-template-columns: 1fr 1fr;*/
+    display: flex;
+    align-items: flex-end;
+    gap: 21px;
+    justify-content: flex-start;
+}
+
+.button {
+    min-width:210px;
+    min-height: 65px;
+    cursor: pointer;
+    border-radius: 12px;
+    text-align: center;
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: 300;
+    border: none;
+    display: block;
+}
+
+.buy_button {
+    color: #000;
+    background-color: #FBCB03;
+}
+
+.decline_button {
+    color: #FFF;
+    background-color: #000;
+}
+
+.buy_button:hover {
+    background-color: #E6B901;
+}
+
+.decline_button:hover {
+    background-color: #000;
+    opacity: 0.8;
+}
+
+.button__emoji {
+    display: block;
+    margin: 0 auto -2px;
+}
+
+.desc__text {
+    line-height: 1.4em;
+}
+
+.desc__text p {
+    margin-bottom: 10px;
+}
