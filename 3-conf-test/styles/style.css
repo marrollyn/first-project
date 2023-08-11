@@ -3,12 +3,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    /*flex-direction: column;
-    flex-wrap: wrap;*/
     margin:auto;
     background-image: url(../images/lines\ 2.svg);
     background-repeat: no-repeat;
-    background-position: top left;
+    background-position: 40% 0%;
 }
 
 
@@ -55,19 +53,20 @@
     
 }
 .cover {
-    background-image: url(../images/jrg_live_background\ 2.svg);
-    background-size: cover;
-    /*background-position: center;*/
+    /*background-image: url(../images/jrg_live_background\ 2.svg);
+    background-size: cover;*/
     max-width: 714px;
     max-height: 611px;
     width: 100%;
     height: 100%;
     /*object-fit: contain;*/
     object-fit: cover;
-    /*height: 100%;
-    flex-shrink: 1;
-    flex-wrap: wrap;*/
     align-self: flex-end;
+}
+
+.cover-image {
+    width: 100%;
+    object-fit: cover;
 }
 
 .content_box__desc {
@@ -89,8 +88,6 @@
 }
 
 .desc__button_box {
-    /*display: grid;
-    grid-template-columns: 1fr 1fr;*/
     display: flex;
     align-items: flex-end;
     gap: 21px;
@@ -125,13 +122,25 @@
 }
 
 .decline_button:hover {
-    background-color: #000;
-    opacity: 0.8;
+    background-color: rgba(0, 0, 0, 0.80);
+}
+
+.button__emoji:hover {
+    cursor: pointer;
+}
+
+.button__emoji:hover + .buy_button {
+    background-color: #E6B901;
+}
+
+.button__emoji:hover + .decline_button {
+    background-color: rgba(0, 0, 0, 0.80);
 }
 
 .button__emoji {
     display: block;
     margin: 0 auto -2px;
+    
 }
 
 .desc__text {
